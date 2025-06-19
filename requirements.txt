@@ -1,0 +1,8 @@
+pandas
+numpy
+plotly
+sklearn
+xgboost
+joblib
+PyPDF2
+seaborn
