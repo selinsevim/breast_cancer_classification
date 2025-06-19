@@ -49,7 +49,7 @@ breast_cancer_prediction_ai_model/
 └── docker_compose.yaml # This file
 ```
 
-![AI-Powered Breast Cancer Prediction Assistant](assets/localhost.png)
+![AI-Powered Breast Cancer Prediction Assistant](static/assets/localhost.png)
 
 ## Setup and Run Locally
 
