@@ -15,11 +15,30 @@ This project is a web application that uses a XGBoost model to predict breast ca
 
 ## Project Structure
 
+```bash
 breast_cancer_prediction_ai_model/
 ├── app/
 │ └── api.py # FastAPI backend
 ├── model/
 │ └── model.joblib # Pre-trained ML model and scaler
+│ └── calibrated_xgb_model.pkl
+│ └── scaler.pkl
+├── data/
+│ └── preprocessed/
+│       └──preprocessed.csv
+│ └── raw/
+│       └──data.csv
+├── notebooks/
+│ └── analysis.ipynb
+├── script/
+│ └── run_eda.py
+│ └── run_preprocessing.py
+│ └── run_training.py
+├── src/
+│ └── model/
+│       └──model.py
+│ └── preprocessing/
+│       └──preprocessing.py
 ├── static/
 │ ├── index.html # Frontend HTML page
 │ ├── style.css # Styling for frontend
@@ -27,6 +46,8 @@ breast_cancer_prediction_ai_model/
 ├── requirements.txt # Python dependencies
 ├── Dockerfile # Dockerfile to containerize the app
 └── README.md # This file
+└── docker_compose.yaml # This file
+```
 
 ## Setup and Run Locally
 
