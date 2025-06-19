@@ -49,12 +49,14 @@ breast_cancer_prediction_ai_model/
 └── docker_compose.yaml # This file
 ```
 
+![AI-Powered Breast Cancer Prediction Assistant](assets/localhost.png)
+
 ## Setup and Run Locally
 
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/selinsevim/breast_cancer_classification
 cd breast_cancer_prediction_ai_model
 ```
 
