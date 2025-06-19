@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI-Powered Breast Cancer Prediction Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="static/assets/B85EA517-1712-4740-B09C-BED21771BBD1 2.PNG"/>
+        </div>
+        <div class="right">
+            <h2>AI-Powered Breast Cancer Detection Tool</h2>
+            <p>This is an Breast Cancer Detection Assistant. Please enter the patient data below to get a diagnosis.</p>
+            <div id="form-section"><form id="predict-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="radius_mean">Radius Mean:</label>
+                        <input type="number" name="radius_mean" id="radius_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="texture_mean">Texture Mean:</label>
+                        <input type="number" name="texture_mean" id="texture_mean" step="any" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="perimeter_mean">Perimeter Mean:</label>
+                        <input type="number" name="perimeter_mean" id="perimeter_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="area_mean">Area Mean:</label>
+                        <input type="number" name="area_mean" id="area_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="smoothness_mean">Smoothness Mean:</label>
+                        <input type="number" name="smoothness_mean" id="smoothness_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="compactness_mean">Compactness Mean:</label>
+                        <input type="number" name="compactness_mean" id="compactness_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="concavity_mean">Concavity Mean:</label>
+                        <input type="number" name="concavity_mean" id="concavity_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="concave_points_mean">Concave Points Mean:</label>
+                        <input type="number" name="concave_points_mean" id="concave_points_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="symmetry_mean">Concave Points Mean:</label>
+                        <input type="number" name="symmetry_mean" id="symmetry_mean" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fractal_dimension_mean">Concave Points Mean:</label>
+                        <input type="number" name="fractal_dimension_mean" id="fractal_dimension_mean" step="any" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="radius_se">Radius Standar Error:</label>
+                        <input type="number" name="radius_se" id="radius_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="texture_se">Texture Standar Error:</label>
+                        <input type="number" name="texture_se" id="texture_se" step="any" required>
+                    </div> 
+                    <div class="form-group">
+                        <label for="perimeter_se">Perimeter Standar Error:</label>
+                        <input type="number" name="perimeter_se" id="perimeter_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="area_se">Area Standar Error:</label>
+                        <input type="number" name="area_se" id="area_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="smoothness_se">Smoothness Standar Error:</label>
+                        <input type="number" name="smoothness_se" id="smoothness_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="compactness_se">Compactness Standar Error:</label>
+                        <input type="number" name="compactness_se" id="compactness_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="concavity_se">Concavity Standar Error:</label>
+                        <input type="number" name="concavity_se" id="concavity_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="concave_points_se">Concave Points Standar Error:</label>
+                        <input type="number" name="concave_points_se" id="concave_points_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="symmetry_se">Concave Points Standar Error:</label>
+                        <input type="number" name="symmetry_se" id="symmetry_se" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fractal_dimension_se">Concave Points Standar Error:</label>
+                        <input type="number" name="fractal_dimension_se" id="fractal_dimension_se" step="any" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="radius_worst">Radius Worst:</label>
+                        <input type="number" name="radius_worst" id="radius_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="texture_worst">Texture Worst:</label>
+                        <input type="number" name="texture_worst" id="texture_worst" step="any" required>
+                    </div> 
+                    <div class="form-group">
+                        <label for="perimeter_worst">Perimeter Worst:</label>
+                        <input type="number" name="perimeter_worst" id="perimeter_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="area_worst">Area Worst:</label>
+                        <input type="number" name="area_worst" id="area_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="smoothness_worst">Smoothness Worst:</label>
+                        <input type="number" name="smoothness_worst" id="smoothness_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="compactness_worst">Compactness Worst:</label>
+                        <input type="number" name="compactness_worst" id="compactness_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="concavity_worst">Concavity Worst:</label>
+                        <input type="number" name="concavity_worst" id="concavity_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="concave_points_worst">Concave Points Worst:</label>
+                        <input type="number" name="concave_points_worst" id="concave_points_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="symmetry_worst">Concave Points Worst:</label>
+                        <input type="number" name="symmetry_worst" id="symmetry_worst" step="any" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fractal_dimension_worst">Concave Points Worst:</label>
+                        <input type="number" name="fractal_dimension_worst" id="fractal_dimension_worst" step="any" required>
+                    </div>      
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+            
+            <!-- Result Section (initially hidden) -->
+            <div id="result-section" style="display: none;">
+                <h3>Prediction Result:</h3>
+                <p id="prediction-text" style="font-size: 24px; font-weight: bold;"></p>
+                <button onclick="resetForm()">Try Again</button>
+            </div>
+            </div>
+
+            <script>
+                const form = document.getElementById("predict-form");
+                const formSection = document.getElementById("form-section");
+                const resultSection = document.getElementById("result-section");
+                const resultText = document.getElementById("prediction-text");
+
+                form.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(form);
+                    const data = {};
+
+                    formData.forEach((value, key) => {
+                    data[key] = parseFloat(value);
+                    });
+
+                    try {
+                    const response = await fetch("/predict/", {
+                        method: "POST",
+                        headers: {
+                        "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+
+                    formSection.style.display = "none";
+                    resultSection.style.display = "block";
+                    resultText.textContent = result.result;
+                    } catch (err) {
+                    alert("Prediction failed.");
+                    console.error(err);
+                    }
+                });
+
+                function resetForm() {
+                    form.reset();
+                    resultSection.style.display = "none";
+                    formSection.style.display = "block";
+                }
+                </script>
+        </div>
+
+        
+
+    </div>
+    
+</html>

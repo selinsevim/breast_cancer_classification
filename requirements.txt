@@ -1,8 +1,11 @@
 pandas
 numpy
 plotly
-sklearn
+scikit-learn
 xgboost
 joblib
 PyPDF2
 seaborn
+fastapi
+pydantic
+uvicorn

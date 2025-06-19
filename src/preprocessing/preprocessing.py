@@ -26,6 +26,7 @@ def prepare_columns(df):
     df = df.drop(columns = "Unnamed: 32", axis = 1) 
     # Map the string values to binary values
     df["diagnosis"] = df["diagnosis"].map({'M':1, 'B':0})
+    df = df.rename(columns=lambda x: x.replace(' ', '_'), inplace=True)
     return df
 
 def distribution_graph(df):
