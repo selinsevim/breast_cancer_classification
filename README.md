@@ -1,9 +1,9 @@
 # AI-Powered Breast Cancer Prediction Assistant
 
+This project is a web application that uses a XGBoost model to predict breast cancer diagnosis (Benign or Malignant) based on patient data. The backend is built with FastAPI, and the frontend is a simple HTML/CSS form that collects user inputs and displays the prediction result.
+
 ![AI-Powered Breast Cancer Prediction Assistant](static/assets/localhost.png)
 ![AI-Powered Breast Cancer Prediction Assistant Result](static/assets/benign.png)
-
-This project is a web application that uses a XGBoost model to predict breast cancer diagnosis (Benign or Malignant) based on patient data. The backend is built with FastAPI, and the frontend is a simple HTML/CSS form that collects user inputs and displays the prediction result.
 
 ---
 
