@@ -76,6 +76,8 @@ pip install -r requirements.txt
 
 ### 4. Run the FastAPI app
 
+![FastAPI](static/assets/benign.png)
+
 ```bash
 uvicorn app.api:app --reload
 ```
